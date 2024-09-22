@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact Page</title>
+</head>
+<body style="margin: 0; display: flex; flex-direction: column; min-height: 100vh; ">
+
+    <!-- Navigation Section -->
+    <header style="background-color: rgb(46, 123, 247); padding: 10px;">
+        <img src="download.png" alt="Logo" style="height: 40px; vertical-align: middle; margin-right: 10px;">
+        <nav>
+            <ul style="list-style-type: none; padding: 0; text-align: center; margin: 0;">
+                <li style="display: inline; margin-right: 20px;">
+                    <a href="/index.html" style="color: black; text-decoration: none; font-weight: bold;">Home</a>
+                </li>
+                <li style="display: inline; margin-right: 20px;">
+                    <a href="/about.html" style="color: black; text-decoration: none; font-weight: bold;">About</a>
+                </li>
+                <li style="display: inline; margin-right: 20px;">
+                    <a href="/portfolio.html" style="color: black; text-decoration: none; font-weight: bold;">Portfolio</a>
+                </li>
+                <li style="display: inline; margin-right: 20px;">
+                    <a href="/contact.html" style="color: black; text-decoration: none; font-weight: bold;">Contact</a>
+                </li>
+            </ul>
+        </nav>
+    </header>
+
+    <main style="flex: 1; max-width: 800px; margin: auto; padding: 5px;">
+        <fieldset>
+            <legend>Your Details:</legend>
+            <p>
+                <label for="name">Name:</label>
+                <input type="text" name="name" required>
+            </p>
+            <p>
+                <label for="email">Email:</label>
+                <input type="email" name="email" required>
+            </p>
+        </fieldset>
+        <br/>
+        <fieldset>
+            <legend>Your Review:</legend>
+            <p>
+                <label for="select">How did you hear about us?</label>
+                <select name="select" id="select">
+                    <option value="google">Google</option>
+                    <option value="twitter">Twitter</option>
+                    <option value="instagram">Instagram</option>
+                    <option value="facebook">Facebook</option>
+                    <option value="linkedin">LinkedIn</option>
+                </select>
+            </p>
+            <div>
+                <label for="visit">Would you visit again?</label>
+                <div>
+                    <input type="radio" name="visit" value="yes"> Yes
+                    <input type="radio" name="visit" value="no"> No
+                    <input type="radio" name="visit" value="maybe"> Maybe
+                </div>
+            </div>
+            <p>
+                <label for="comments">Comments:</label>
+                <br/>
+                <textarea name="comments" rows="4"></textarea>      
+            </p>
+            <p>
+                <input type="checkbox" name="checked"> Sign me up for email updates
+            </p>
+            <p>
+                <input type="submit" name="submit" value="Submit Review">
+            </p>
+        </fieldset>
+        <h2 style="text-align: center; margin-top: 20px;">Our Location</h2>
+        <iframe 
+        src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d14159906.420505693!2d58.3546319874604!3d29.950436907162732!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x38db52d2f8fd751f%3A0x46b7a1f7e614925c!2sPakistan!5e0!3m2!1sen!2s!4v1727018866006!5m2!1sen!2s"
+        width="600" 
+        height="450" 
+        style="border:0;" 
+        allowfullscreen="" 
+        loading="lazy" 
+        referrerpolicy="no-referrer-when-downgrade">
+    </iframe>"
+
+    </main>
+
+    <footer style="background-color: rgb(64, 116, 200); color: white; text-align: center; padding: 5px;">
+        <p style="margin: 0;">Copyright © 2024. All rights reserved.</p>
+    </footer>
+
+</body>
+</html>
